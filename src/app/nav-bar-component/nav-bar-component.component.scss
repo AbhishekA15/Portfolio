@@ -1,0 +1,46 @@
+.zoom-button {
+    transition: transform 0.2s ease;
+    /* Smooth zoom effect */
+}
+
+.zoom-button:hover {
+    transform: scale(1.1);
+    /* Zoom in the button slightly */
+}
+
+label {
+    font-weight: bold;
+}
+
+label.active {
+    background-color: black;
+    color: white;
+}
+
+label span {
+    display: none;
+}
+
+label.active span {
+    display: block;
+}
+
+.dark-mode label,
+.dark-mode button,
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode .git {
+    border-color: white !important;
+}
+
+.git {
+    border-color: black !important;
+}
+
+
+.dark-mode label.active {
+    background-color: white;
+    color: black;
+}

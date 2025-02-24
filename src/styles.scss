@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@keyframes fadeInFromTop {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.fade-top-in {
+    animation: fadeInFromTop 0.5s ease-in-out;
+}
+
+.fade-bottom-in {
+    animation: fadeInFromBottom 0.5s ease-in-out;
+}
+
+body.dark-mode {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: #121212f5;
+    color: white;
+}
+
+body{
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

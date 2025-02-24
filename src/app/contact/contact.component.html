@@ -1,0 +1,38 @@
+<div [class]="isDarkMode?'dark-mode':'light-mode' " class="container pt-3 px-5">
+  <div class="position-fixed start-50 translate-middle" style="top: 50px;">
+    <div class="alert" role="alert">
+      <i class="bi bi-check-square-fill"></i>
+      Thanks for sending a message!
+    </div>
+  </div>
+  <div class="fade-top-in">
+    <p>Contact</p>
+    <h2 class="pt-5">Say Hi!</h2>
+    <h3 class="">Looking to start a project and need that magical touch? Reach out.</h3>
+    <ul class="pb-5 fw-bold">
+      <li>Available for new opportunities</li>
+    </ul>
+  </div>
+  <div class="fade-bottom-in">
+    <hr>
+    <form>
+      <div class="d-flex">
+        <div class="col form-floating mb-3 me-3">
+          <input autocomplete="off" type="text" class="form-control" placeholder="Name" id="Name">
+          <label for="Name">Name</label>
+        </div>
+        <div class="col form-floating mb-3 ms-3">
+          <input autocomplete="off" type="email" class="form-control" placeholder="Email" id="Email">
+          <label for="Email">Email</label>
+        </div>
+      </div>
+      <div class="form-floating mb-2">
+        <textarea autocomplete="off" class="form-control" placeholder="Message" id="Message" style="height: 20vh;"></textarea>
+        <label for="Message">Message</label>
+      </div>
+      <div class="w-100 my-1">
+        <button type="button" class="btn w-100">Send</button>
+      </div>
+    </form>
+  </div>
+</div>

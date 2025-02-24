@@ -1,0 +1,29 @@
+.container {
+    min-height: 100vh;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: pink !important;
+    color: black !important;
+}
+
+.alert {
+    animation: fadeInFromTop 0.5s ease-in-out forwards;
+}
+
+.dark-mode .alert{
+    color: white;
+}
