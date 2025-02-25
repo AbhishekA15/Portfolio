@@ -6,90 +6,31 @@
         </h2>
     </div>
     <div class="fade-bottom-in">
-        <div class="row gap-5 mb-3">
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://angular.dev/overview" target="_blank">
-                    <h5>Angular</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Web Application Framework</p>
-                </a>
-            </div>
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://spring.io/" target="_blank">
-                    <h5>Spring Boot</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Java Framework</p>
-                </a>
-            </div>
-        </div>
-        <div class="row gap-5 mb-3">
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://getbootstrap.com/" target="_blank">
-                    <h5>Bootstrap</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Front-end Framework</p>
-                </a>
-            </div>
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://material.angular.io/" target="_blank">
-                    <h5>Material UI</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Component Library</p>
-                </a>
-            </div>
-        </div>
-        <div class="row gap-5 mb-3">
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://git-scm.com/" target="_blank">
-                    <h5>Git</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Version Control System</p>
-                </a>
-            </div>
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://dev.mysql.com/doc/" target="_blank">
-                    <h5>MySQL</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Database Services</p>
-                </a>
-            </div>
-        </div>
-        <div class="row gap-5 mb-3">
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://www.uipath.com/" target="_blank">
-                    <h5>Uipath</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Robotics Process Automation</p>
-                </a>
-            </div>
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://docs.appian.com/suite/help/24.4/" target="_blank">
-                    <h5>Appian</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Low-code Automation</p>
-                </a>
-            </div>
-        </div>
-        <div class="row gap-5 mb-3">
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://nodejs.org/en" target="_blank">
-                    <h5>Node JS</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Backend Runtime Environment</p>
-                </a>
-            </div>
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://code.visualstudio.com/" target="_blank">
-                    <h5>VS Code</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Code Editor</p>
-                </a>
-            </div>
-        </div>
-        <div class="row gap-5 mb-3">
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://stripe.com/in" target="_blank">
-                    <h5>Stripe</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">Payment Gateway</p>
-                </a>
-            </div>
-            <div class="col rounded justify-content-center align-items-center px-3 py-2">
-                <a draggable="false" class="text-decoration-none" href="https://openai.com/index/chatgpt/" target="_blank">
-                    <h5>Chat GPT</h5>
-                    <p class="text-secondary fs-7 m-0 font-monospace fw-light">AI</p>
-                </a>
-            </div>
+        <div class="row row-cols-2 mb-3">
+            <app-stack-card Tech="Angular" TechDescription="Web Application Framework"
+                TechLink="https://angular.dev/overview" TechImg="assets/angular.png"></app-stack-card>
+            <app-stack-card Tech="Spring Boot" TechDescription="Java Framework" TechLink="https://spring.io/"
+                TechImg="assets/springBoot.png"></app-stack-card>
+            <app-stack-card Tech="Bootstrap" TechDescription="Front-end Framework" TechLink="https://getbootstrap.com/"
+                TechImg="assets/bootstrap.svg"></app-stack-card>
+            <app-stack-card Tech="Material UI" TechDescription="Component Library"
+                TechLink="https://material.angular.io/" TechImg="assets/materialUI.png"></app-stack-card>
+            <app-stack-card Tech="Git" TechDescription="Version Control System" TechLink="https://git-scm.com/"
+                TechImg="assets/git.png"></app-stack-card>
+            <app-stack-card Tech="MySQL" TechDescription="Database Services" TechLink="https://dev.mysql.com/doc/"
+                TechImg="assets/mySQL.png"></app-stack-card>
+            <app-stack-card Tech="Uipath" TechDescription="Robotics Process Automation"
+                TechLink="https://www.uipath.com/" TechImg="assets/uipath.png"></app-stack-card>
+            <app-stack-card Tech="Appian" TechDescription="Low-code Automation"
+                TechLink="https://docs.appian.com/suite/help/24.4/" TechImg="assets/appian.png"></app-stack-card>
+            <app-stack-card Tech="Node JS" TechDescription="Backend Runtime Environment"
+                TechLink="https://nodejs.org/en" TechImg="assets/node.svg"></app-stack-card>
+            <app-stack-card Tech="VS Code" TechDescription="Code Editor" TechLink="https://code.visualstudio.com/"
+                TechImg="assets/vsCode.png"></app-stack-card>
+            <app-stack-card Tech="Stripe" TechDescription="Payment Gateway" TechLink="https://stripe.com/in"
+                TechImg="assets/stripe.png"></app-stack-card>
+            <app-stack-card Tech="Chat GPT" TechDescription="AI" TechLink="https://openai.com/index/chatgpt/"
+                TechImg="assets/chatGPT.png"></app-stack-card>
         </div>
     </div>
-    <app-footer></app-footer>
 </div>

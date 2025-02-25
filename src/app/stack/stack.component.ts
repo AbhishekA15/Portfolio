@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { ThemeServiceService } from '../service/theme-service.service';
-import { FooterComponent } from "../footer/footer.component";
-import { CommonModule } from '@angular/common';
+import { StackCardComponent } from '../stack-card/stack-card.component';
 
 @Component({
   selector: 'app-stack',
   standalone: true,
-  imports: [FooterComponent,CommonModule],
+  imports: [StackCardComponent],
   templateUrl: './stack.component.html',
   styleUrls: ['./stack.component.scss']
 })

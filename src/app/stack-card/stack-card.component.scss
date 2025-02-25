@@ -1,0 +1,27 @@
+.col:hover {
+    box-shadow:
+        5px 5px 0px rgba(0, 0, 0, 0.5),
+        /* Tomato with transparency */
+        10px 10px 0px rgba(0, 0, 0, 0.4),
+        /* Steel Blue with transparency */
+        15px 15px 0px rgba(0, 0, 0, 0.3),
+        /* Lime Green with transparency */
+        20px 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.col {
+    transition: transform 0.5s ease, box-shadow 0.5s ease-in;
+}
+
+.dark-mode .col:hover {
+    box-shadow:
+        5px 5px 0px rgba(255, 255, 255, 0.5),
+        /* Tomato with transparency */
+        10px 10px 0px rgba(255, 255, 255, 0.4),
+        /* Steel Blue with transparency */
+        15px 15px 0px rgba(255, 255, 255, 0.3),
+        /* Lime Green with transparency */
+        20px 20px 0px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
