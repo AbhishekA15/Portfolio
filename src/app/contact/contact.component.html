@@ -1,15 +1,20 @@
-<div [class]="isDarkMode?'dark-mode':'light-mode' " class="container pt-3 px-5">
-  <div class="position-fixed start-50 translate-middle" style="top: 50px;">
-    <div class="alert" role="alert">
-      <i class="bi bi-check-square-fill"></i>
+<div [class]="isDarkMode?'dark-mode':'light-mode' " class="container-fluid w-50 pt-3 px-5">
+  <div [class]="alertFlag?'':'d-none'" class="position-fixed start-50 translate-middle" style="top: 50px;">
+    <div class="alert bg-dark text-light" role="alert">
+      <i class="bi bi-check-square-fill" style="color: green;"></i>
       Thanks for sending a message!
     </div>
   </div>
   <div class="fade-top-in">
     <p>Contact</p>
-    <h2 class="pt-5">Say Hi!</h2>
+    <h2 class="pt-5 d-flex gap-2">
+      <p class="text-secondary">Say</p>
+      <div class="welcome">
+        <span class="word">{{ currentGreeting }}</span>!
+      </div>
+    </h2>
     <h3 class="">Looking to start a project and need that magical touch? Reach out.</h3>
-    <ul class="pb-5 fw-bold">
+    <ul class="pb-5 fw-bold text-success">
       <li>Available for new opportunities</li>
     </ul>
   </div>
@@ -27,12 +32,14 @@
         </div>
       </div>
       <div class="form-floating mb-2">
-        <textarea autocomplete="off" class="form-control" placeholder="Message" id="Message" style="height: 20vh;"></textarea>
+        <textarea autocomplete="off" class="form-control" placeholder="Message" id="Message"
+          style="height: 20vh;"></textarea>
         <label for="Message">Message</label>
       </div>
       <div class="w-100 my-1">
-        <button type="button" class="btn w-100">Send</button>
+        <button type="button" class="btn w-100" (click)="alert()">Send</button>
       </div>
     </form>
   </div>
+  <app-footer></app-footer>
 </div>

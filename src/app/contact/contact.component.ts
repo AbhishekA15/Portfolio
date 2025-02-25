@@ -1,20 +1,44 @@
 import { Component } from '@angular/core';
 import { ThemeServiceService } from '../service/theme-service.service';
+import { CommonModule } from '@angular/common';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [CommonModule,FooterComponent],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
+
 })
 export class ContactComponent {
   isDarkMode: boolean = false;
-  
-    constructor(private themeService: ThemeServiceService) {
-      // Subscribe to the theme service to sync the state
-      this.themeService.currentMode.subscribe(mode => {
-        this.isDarkMode = mode;
-      });
-    }
+  greetings:string[]=["Hi","नमस्ते","Hola","Hallo","سلام"];
+  currentGreeting:String='';
+  greetIndex:number=0;
+  alertFlag:boolean=false;
+
+  constructor(private themeService: ThemeServiceService) {
+    this.greeting();
+    // Subscribe to the theme service to sync the state
+    this.themeService.currentMode.subscribe(mode => {
+      this.isDarkMode = mode;
+    });
+  }
+
+  greeting(): void {
+    this.currentGreeting = this.greetings[this.greetIndex];
+    setInterval(() => {
+      this.greetIndex = (this.greetIndex + 1) % this.greetings.length;
+      this.currentGreeting = this.greetings[this.greetIndex];
+    }, 2000); // Switch every 2 seconds
+  }
+
+  alert():void{
+    this.alertFlag=true;
+    setTimeout(()=>{
+      this.alertFlag=false;
+    },5000)
+  }
+
 }

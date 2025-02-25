@@ -10,11 +10,14 @@ export const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'stack', component: StackComponent },
   { path: 'contact', component: ContactComponent },
-  {path:'**', redirectTo:''}
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled', // Enable scrolling behavior
+    anchorScrolling: 'enabled',         // Optional: Allow anchor link scrolling
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

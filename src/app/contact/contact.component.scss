@@ -21,9 +21,24 @@ button:hover {
 }
 
 .alert {
-    animation: fadeInFromTop 0.5s ease-in-out forwards;
+    animation: fadeInFromTop 0.5s ease-in-out forwards,fadeInFromTop 0.5s ease-in-out 4.5s reverse;
 }
 
-.dark-mode .alert{
+.dark-mode .alert {
     color: white;
+}
+
+.word {
+    font-weight: bold;
+    animation: fade 2s infinite ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
