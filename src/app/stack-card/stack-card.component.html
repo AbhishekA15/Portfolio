@@ -1,4 +1,4 @@
-<div [class]="Shorthand?'d-none':''" class="col rounded d-flex align-items-center px-3 py-2 gap-3">
+<div [class]="isDarkMode?'dark-mode':'light-mode'"  *ngIf="!Shorthand" class="col rounded d-flex align-items-center px-3 py-2 gap-3">
     <img style="height: 35px; width: 35px;" draggable="false" [src]="TechImg">
     <a draggable="false" class="text-decoration-none" [href]="TechLink" target="_blank">
         <h5>{{Tech}}</h5>
@@ -6,5 +6,5 @@
     </a>
 </div>
 
-<a draggable="false" [href]="TechLink" target="_blank" [class]="!Shorthand?'d-none':''"> <img draggable="false"
+<a [class]="isDarkMode?'dark-mode':'light-mode'" draggable="false" [href]="TechLink" target="_blank" *ngIf="Shorthand"> <img draggable="false"
         [src]="TechImg" style="height: 50px; width: 50px;"></a>

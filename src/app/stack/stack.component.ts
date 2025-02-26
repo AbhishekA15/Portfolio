@@ -10,12 +10,4 @@ import { StackCardComponent } from '../stack-card/stack-card.component';
   styleUrls: ['./stack.component.scss']
 })
 export class StackComponent {
-  isDarkMode: boolean = false;
-
-  constructor(private themeService: ThemeServiceService) {
-      // Subscribe to the theme service to sync the state
-      this.themeService.currentMode.subscribe(mode => {
-        this.isDarkMode = mode;
-      });
-    }
 }

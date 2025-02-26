@@ -12,9 +12,12 @@
 
 .col {
     transition: transform 0.5s ease, box-shadow 0.5s ease-in;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.dark-mode .col:hover {
+.dark-mode:hover {
     box-shadow:
         5px 5px 0px rgba(255, 255, 255, 0.5),
         /* Tomato with transparency */
