@@ -10,7 +10,7 @@ import { ThemeServiceService } from '../service/theme-service.service';
 
 })
 export class ContactComponent {
-  isDarkMode: boolean = false;
+  isDarkMode: boolean|undefined;
   greetings:string[]=["Hi","नमस्ते","Hola","Hallo","سلام"];
   currentGreeting:String='';
   greetIndex:number=0;

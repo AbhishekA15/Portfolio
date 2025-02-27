@@ -1,4 +1,4 @@
-<div class="container-fluid w-50 pt-3 px-5">
+<div [class]="isDarkMode?'dark-mode':'light-mode' " class="container-fluid pt-3">
     <div class="fade-top-in d-flex gap-4 align-items-center">
         <img draggable="false" id="profile" src="assets/Abhishek Profile.png">
         <div>
@@ -7,5 +7,154 @@
         </div>
     </div>
     <div class="fade-bottom-in">
+        <h4 class="pt-5 d-flex gap-2">
+            <p class="text-secondary">I build</p>
+            <p class="fw-bold">full stack web applications</p>
+        </h4>
+        <span>
+            <p>
+                Hi, I'm Abhishek Sharma, a full-stack developer from Gurugram, India. I enjoy solving complex problems
+                and building robust web applications.
+            </p>
+            <p>
+                In my free time, I dive into the strategic world of chess, soak up the energy of live basketball games
+                at the stadium, and constantly challenge myself to learn new skills. On this website, you'll find
+                articles about my projects, insights from my learning journey, and a glimpse into the hobbies that keep
+                me inspired.
+            </p>
+            <ul class=" ps-3 fw-bold text-success">
+                <li>available for projects</li>
+            </ul>
+            <button id="contactMe" class="btn" routerLink="/contact">Contact Me</button>
+        </span>
+        <div class="mt-5">
+            <p class="fs-4 m-0 fw-bold">Experience</p>
+            <div class="d-flex gap-2 mt-3">
+                <img class="logo" src="assets/netlink.jpg">
+                <span class="w-100">
+                    <p class="mb-0 fs-5">Netlink Software Group America Inc</p>
+                    <p class="mb-0 text-secondary">Associate Software Developer</p>
+                </span>
+                <p class="mb-0 text-secondary">10/2022 - 11/2024</p>
+            </div>
+            <ul class="text-secondary mt-2 mb-5">
+                <li>Developed and maintained scalable Angular applications, delivering dynamic, responsive, and
+                    user-friendly interfaces tailored to client requirements.</li>
+                <li>
+                    Built and enhanced RESTful APIs using Spring Boot, enabling seamless communication between the
+                    front-end and back-end with optimal performance.
+                </li>
+                <li>
+                    Designed and implemented robust workflows using UiPath, automating repetitive tasks and streamlining
+                    business processes to improve operational efficiency.
+                </li>
+                <li>
+                    Worked on Appian low-code platform, designing and deploying process-driven applications to solve
+                    complex business challenges with agility.
+                </li>
+                <li>
+                    Collaborated closely with cross-functional teams to gather requirements, troubleshoot issues, and
+                    deliver high-quality software solutions.
+                </li>
+                <li>
+                    Implemented reusable components, dynamic forms, and nested routing in Angular, ensuring modularity
+                    and scalability in UI development.
+                </li>
+                <li>
+                    Optimized database interactions using JPA and Hibernate, crafting efficient queries for improved
+                    data management and retrieval.
+                </li>
+                <li>
+                    Integrated third-party services and APIs into the system architecture, providing enhanced
+                    functionality and support for business-critical processes.
+                </li>
+                <li>
+                    Adopted Agile methodologies, participating in daily stand-ups, sprint planning, and retrospectives
+                    to ensure timely delivery of high-quality deliverables.
+                </li>
+            </ul>
+
+            <div class="d-flex gap-2 mt-3">
+                <img class="logo" src="assets/netlink.jpg">
+                <span class="w-100">
+                    <p class="mb-0 fs-5">Netlink Software Group America Inc</p>
+                    <p class="mb-0 text-secondary">Trainee Consultant</p>
+                </span>
+                <p class="mb-0 text-secondary">02/2022 - 09/2022</p>
+            </div>
+            <ul class="text-secondary mt-2 mb-5">
+                <li>
+                    Developed hands-on experience with front-end frameworks, building responsive and interactive user
+                    interfaces using Angular.
+                </li>
+                <li>
+                    Gained proficiency in back-end technologies, including developing RESTful APIs using Node.js and
+                    Spring Boot, with a focus on scalability and security.
+                </li>
+                <li>
+                    Learned best practices for version control using Git, enabling collaboration and efficient code
+                    management within team projects.
+                </li>
+                <li>
+                    Participated in Agile development processes, including daily stand-ups, sprint planning, and code
+                    reviews to deliver consistent results in a collaborative environment.
+                </li>
+                <li>
+                    Explored cloud integration and deployment on platforms like AWS and Docker, gaining insights into
+                    modern DevOps workflows.
+                </li>
+                <li>
+                    Collaborated with peers and mentors, working on projects and solving real-world challenges to
+                    solidify technical and problem-solving skills.
+                </li>
+            </ul>
+
+            <div class="d-flex gap-2 mt-3">
+                <img class="logo" src="assets/gpcssi.png">
+                <span class="w-100">
+                    <p class="mb-0 fs-5">Gurugram Police Cyber Security Summer Internship</p>
+                    <p class="mb-0 text-secondary">Cyber Security Intern</p>
+                </span>
+                <p class="mb-0 text-secondary">06/2021 - 07/2021</p>
+            </div>
+            <ul class="text-secondary mt-2">
+                <li>
+                    Gained hands-on experience in identifying and mitigating cybersecurity threats, including phishing,
+                    malware, and ransomware attacks.
+                </li>
+                <li>
+                    Participated in workshops and training sessions conducted by senior officials, enhancing knowledge
+                    of cybersecurity laws and ethical hacking practices.
+                </li>
+                <li>
+                    Supported Gurugram Police in spreading cybercrime awareness through community outreach programs and
+                    digital campaigns.
+                </li>
+            </ul>
+
+        </div>
+        <div class="mt-5">
+            <span class="d-flex align-items-center justify-content-between">
+                <p class="fs-4 m-0 fw-bold">Stack</p>
+                <button class="btn btn-light" routerLink="/stack">All <i class="bi bi-arrow-right"></i></button>
+            </span>
+            <div class="d-flex justify-content-around align-items-end mt-3">
+                <app-stack-card [Shorthand]=true Tech="Angular" TechDescription="Web Application Framework"
+                    TechLink="https://angular.dev/overview" TechImg="assets/angular.png"></app-stack-card>
+                <app-stack-card [Shorthand]=true Tech="Spring Boot" TechDescription="Java Framework"
+                    TechLink="https://spring.io/" TechImg="assets/springBoot.png"></app-stack-card>
+                <app-stack-card [Shorthand]=true Tech="Bootstrap" TechDescription="Front-end Framework"
+                    TechLink="https://getbootstrap.com/" TechImg="assets/bootstrap.svg"></app-stack-card>
+                <app-stack-card [Shorthand]=true Tech="Material UI" TechDescription="Component Library"
+                    TechLink="https://material.angular.io/" TechImg="assets/materialUI.png"></app-stack-card>
+                <app-stack-card [Shorthand]=true Tech="Git" TechDescription="Version Control System"
+                    TechLink="https://git-scm.com/" TechImg="assets/git.png"></app-stack-card>
+                <app-stack-card [Shorthand]=true Tech="MySQL" TechDescription="Database Services"
+                    TechLink="https://dev.mysql.com/doc/" TechImg="assets/mySQL.png"></app-stack-card>
+                <app-stack-card [Shorthand]=true Tech="Uipath" TechDescription="Robotics Process Automation"
+                    TechLink="https://www.uipath.com/" TechImg="assets/uipath.png"></app-stack-card>
+                <p class="mb-1">...</p>
+            </div>
+        </div>
     </div>
 </div>

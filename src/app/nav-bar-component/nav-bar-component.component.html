@@ -1,11 +1,11 @@
 <div [class]="isDarkMode?'dark-mode':'light-mode' "
-    class="d-flex justify-content-center align-items-center bg-opacity-50 fixed-bottom mb-3">
-    <div class="btn-group rounded-pill shadow-lg p-3 gap-2">
+    class="d-flex justify-content-center align-items-center bg-opacity-50 fixed-bottom mb-2">
+    <div class="btn-group rounded-pill shadow-lg p-2 gap-1">
 
         <div>
             <label routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
                 class="btn rounded-5 zoom-button d-flex align-items-center gap-2">
-                <i class="bi bi-house-fill fs-3"></i>
+                <i class="bi bi-house-fill fs-4"></i>
                 <span>Home</span>
             </label>
         </div>
@@ -13,7 +13,7 @@
         <div>
             <label routerLink="/projects" routerLinkActive="active"
                 class="btn rounded-5 zoom-button d-flex align-items-center gap-2" for="project">
-                <i class="bi bi-code-slash fs-3"></i>
+                <i class="bi bi-code-slash fs-4"></i>
                 <span>Projects</span>
             </label>
         </div>
@@ -21,7 +21,7 @@
         <div>
             <label routerLink="/stack" routerLinkActive="active"
                 class="btn rounded-5 zoom-button d-flex align-items-center gap-2" for="stack">
-                <i class="bi bi-stack fs-3"></i>
+                <i class="bi bi-stack fs-4"></i>
                 <span>Stack</span>
             </label>
         </div>
@@ -29,18 +29,18 @@
         <div>
             <label routerLink="/contact" routerLinkActive="active"
                 class="btn rounded-5 zoom-button d-flex align-items-center gap-2" for="contact">
-                <i class="bi bi-send-fill fs-3"></i>
+                <i class="bi bi-send-fill fs-4"></i>
                 <span>Contact</span>
             </label>
         </div>
-        <div class="git border-start border-end px-3 mx-2">
+        <div class="git border-start border-end px-2 mx-2">
             <a draggable="false" href="https://github.com/AbhishekA15" target="_blank" class="btn rounded-5" for="git"><i
-                    class="bi bi-github fs-3"></i></a>
+                    class="bi bi-github fs-4"></i></a>
         </div>
 
         <div>
             <button class="btn rounded-5" (click)="toggleTheme()"><i
-                    [class]="isDarkMode ? 'bi bi-cloud-sun-fill' : 'bi bi-moon-stars-fill'" class="fs-3"></i>
+                    [class]="isDarkMode ? 'bi bi-cloud-sun-fill' : 'bi bi-moon-stars-fill'" class="fs-4"></i>
             </button>
         </div>
 

@@ -17,7 +17,7 @@
     text-overflow: ellipsis;
 }
 
-.dark-mode:hover {
+.dark-mode.col:hover {
     box-shadow:
         5px 5px 0px rgba(255, 255, 255, 0.5),
         /* Tomato with transparency */
@@ -27,4 +27,33 @@
         /* Lime Green with transparency */
         20px 20px 0px rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
+}
+
+
+.tool {
+    position: relative;
+    cursor: pointer;
+}
+
+.tool .tooltip-text {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* Positioning */
+    position: absolute;
+    margin-top: 55px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.tool:hover .tooltip-text {
+    visibility: visible;
 }

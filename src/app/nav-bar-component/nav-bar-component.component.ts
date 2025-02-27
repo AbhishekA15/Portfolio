@@ -10,7 +10,7 @@ import { ThemeServiceService } from '../service/theme-service.service';
   styleUrls: ['./nav-bar-component.component.scss']
 })
 export class NavBarComponentComponent {
-  isDarkMode: boolean = false;
+  isDarkMode: boolean | undefined;
 
   constructor(private themeService: ThemeServiceService) {
     // Subscribe to the theme service to sync the state

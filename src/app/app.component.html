@@ -1,5 +1,29 @@
-<div>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-12 col-lg-6 col-md-8">
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<div [class]="isDarkMode?'dark-mode':'light-mode' " class="d-none d-sm-flex fixed-top justify-content-end">
+    <span class="px-2 py-1 rounded m-1" id="modalPallete">
+        Press <span class="p-1 rounded">ctrl j</span> to open the command palette
+    </span>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
 </div>
 <app-nav-bar-component></app-nav-bar-component>
