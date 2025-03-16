@@ -8,6 +8,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from "./footer/footer.component";
 import { StackCardComponent } from './stack-card/stack-card.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { StackCardComponent } from './stack-card/stack-card.component';
     CommonModule,
     BrowserAnimationsModule,
     FooterComponent,
+    ReactiveFormsModule,
+    HttpClientModule
 ],
   providers: [],
   bootstrap: [AppComponent]
